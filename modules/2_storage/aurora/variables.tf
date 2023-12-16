@@ -38,3 +38,7 @@ variable "instance_count" {
 variable "bastion_sg_id" {
   type = string
 }
+
+variable "aurora_mysql_sg_id" {
+  type = string
+}

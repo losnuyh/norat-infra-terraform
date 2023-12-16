@@ -22,6 +22,10 @@ variable "bastion_sg_id" {
   type = string
 }
 
+variable "aurora_mysql_sg_id" {
+  type = string
+}
+
 variable "instance_class" {
   type = string
 }

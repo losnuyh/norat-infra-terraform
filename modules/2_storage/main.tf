@@ -9,4 +9,5 @@ module "aurora-mysql" {
   instance_class = var.instance_class
   instance_count = var.instance_count
   master_admin_name = var.database_master_admin_name
+  aurora_mysql_sg_id = var.aurora_mysql_sg_id
 }

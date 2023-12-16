@@ -33,3 +33,7 @@ variable "instance_count" {
 variable "database_master_admin_name" {
   type = string
 }
+
+variable "aurora_mysql_sg_id" {
+  type = string
+}

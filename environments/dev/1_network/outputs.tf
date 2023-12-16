@@ -18,6 +18,10 @@ output "bastion_sg_id" {
   value = module.network.bastion_sg_id
 }
 
+output "aurora_mysql_sg_id" {
+  value = module.network.aurora_mysql_sg_id
+}
+
 output "bastion_ssh_key_name" {
   value = module.network.bastion_ssh_key_name
 }

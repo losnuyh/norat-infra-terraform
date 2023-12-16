@@ -19,3 +19,10 @@ module "bastion" {
   instance_type = var.bastion_instance_type
   key_path = var.bastion_key_path
 }
+
+module "security_group" {
+  source = "./security_group"
+  project = var.project
+  env = var.env
+  vpc_id = module.vpc.vpc_id
+}
