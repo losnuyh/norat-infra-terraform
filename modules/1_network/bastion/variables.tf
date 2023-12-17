@@ -30,3 +30,7 @@ variable "instance_type" {
 variable "key_path" {
   type = string
 }
+
+variable "bastion_sg_id" {
+  type = string
+}

@@ -1,13 +1,15 @@
-aurora_mysql_sg_id = "sg-074c4ed7d9f420530"
-bastion_public_dns = "ec2-13-125-34-91.ap-northeast-2.compute.amazonaws.com"
-bastion_sg_id = "sg-0706e657e2104e13d"
+alb_sg_id = "sg-012457266158f9651"
+app_instance_sg_id = "sg-0fb8ddaf4ecdbd48b"
+aurora_mysql_sg_id = "sg-0aa08f112d8843395"
+bastion_public_dns = "ec2-3-38-149-205.ap-northeast-2.compute.amazonaws.com"
+bastion_sg_id = "sg-09b86dcb702df6678"
 bastion_ssh_key_name = "second_dev_bastion_root_key"
 private_subnet_ids = [
-  "subnet-0b3a8c44f8bdbec92",
-  "subnet-01cab876d77a3d6b9",
+  "subnet-07757c54467ba03cd",
+  "subnet-0dccaf46eb226b2e2",
 ]
 public_subnet_ids = [
-  "subnet-0549e7222d0f6fec2",
-  "subnet-01bcf578e8a3647b5",
+  "subnet-058cc42759294b4f2",
+  "subnet-0c818d163653993cc",
 ]
-vpc_id = "vpc-00cf49692e424a63a"
+vpc_id = "vpc-067eb6251dc1bb7c5"

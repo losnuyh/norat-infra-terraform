@@ -1,4 +1,4 @@
-resource "aws_security_group" "for_bastion" {
+resource "aws_security_group" "bastion" {
   name = "${var.project}-${var.env}-bastion-sg"
   vpc_id = var.vpc_id
 
