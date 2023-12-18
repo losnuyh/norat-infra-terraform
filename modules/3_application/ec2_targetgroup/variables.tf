@@ -18,7 +18,7 @@ variable "instance_type" {
   type = string
 }
 
-variable "ec2_sg_id" {
+variable "app_instance_sg_id" {
   type = string
 }
 
