@@ -11,3 +11,9 @@ module "aurora-mysql" {
   master_admin_name = var.database_master_admin_name
   aurora_mysql_sg_id = var.aurora_mysql_sg_id
 }
+
+module "s3" {
+  source = "./s3"
+  project = var.project
+  env = var.env
+}
