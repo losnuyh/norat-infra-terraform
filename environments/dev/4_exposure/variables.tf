@@ -6,6 +6,10 @@ variable "env" {
   type = string
 }
 
+variable "region" {
+  type = string
+}
+
 variable "static_bucket_domain_name" {
   type = string
 }
