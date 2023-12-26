@@ -10,7 +10,7 @@ resource "aws_instance" "app" {
   ami = var.application_instance_ami
   instance_type = var.instance_type
   subnet_id = var.private_subnet_ids[each.key]
-  key_name = var.bastion_ssh_key_name
+  key_name = aws_key_pair.ec2_root_key.key_name
   vpc_security_group_ids = [var.app_instance_sg_id]
 
   user_data = <<-EOF

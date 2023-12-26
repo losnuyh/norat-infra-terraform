@@ -26,6 +26,6 @@ variable "application_instance_ami" {
   type = string
 }
 
-variable "bastion_ssh_key_name" {
+variable "ec2_key_path" {
   type = string
 }

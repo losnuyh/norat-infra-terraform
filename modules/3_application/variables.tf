@@ -38,6 +38,6 @@ variable "app_instance_sg_id" {
   type = string
 }
 
-variable "bastion_ssh_key_name" {
+variable "ec2_key_path" {
   type = string
 }

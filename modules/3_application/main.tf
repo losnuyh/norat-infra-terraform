@@ -7,7 +7,7 @@ module "target_group" {
   instance_type = var.instance_type
   app_instance_sg_id = var.app_instance_sg_id
   application_instance_ami = var.application_instance_ami
-  bastion_ssh_key_name = var.bastion_ssh_key_name
+  ec2_key_path = var.ec2_key_path
 }
 
 module "lb" {
