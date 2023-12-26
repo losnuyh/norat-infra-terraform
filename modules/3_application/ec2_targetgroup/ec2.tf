@@ -11,7 +11,7 @@ resource "aws_instance" "app" {
   instance_type = var.instance_type
   subnet_id = var.private_subnet_ids[each.key]
   key_name = var.bastion_ssh_key_name
-  security_groups = [var.app_instance_sg_id]
+  vpc_security_group_ids = [var.app_instance_sg_id]
 
   user_data = <<-EOF
   #!/bin/bash
