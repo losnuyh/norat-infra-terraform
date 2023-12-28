@@ -29,7 +29,3 @@ variable "application_instance_ami" {
 variable "bastion_sg_id" {
   type = string
 }
-
-variable "ec2_key_path" {
-  type = string
-}

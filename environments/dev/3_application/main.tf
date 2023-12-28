@@ -8,5 +8,4 @@ module "application" {
   instance_type = var.instance_type
   application_instance_ami = var.application_instance_ami
   bastion_sg_id = var.bastion_sg_id
-  ec2_key_path = var.ec2_key_path
 }
