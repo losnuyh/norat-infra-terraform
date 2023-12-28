@@ -22,14 +22,6 @@ output "aurora_mysql_sg_id" {
   value = module.network.aurora_mysql_sg_id
 }
 
-output "alb_sg_id" {
-  value = module.network.alb_sg_id
-}
-
-output "app_instance_sg_id" {
-  value = module.network.app_instance_sg_id
-}
-
 output "bastion_ssh_key_name" {
   value = module.network.bastion_ssh_key_name
 }
