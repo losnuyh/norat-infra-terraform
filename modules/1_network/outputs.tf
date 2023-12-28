@@ -26,3 +26,6 @@ output "bastion_ssh_key_name" {
   value = module.bastion.bastion_ssh_key_name
 }
 
+output "api_lambda_sg_id" {
+  value = module.security_group.api_lambda_sg_id
+}

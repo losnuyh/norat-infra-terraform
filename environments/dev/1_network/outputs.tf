@@ -25,3 +25,7 @@ output "aurora_mysql_sg_id" {
 output "bastion_ssh_key_name" {
   value = module.network.bastion_ssh_key_name
 }
+
+output "api_lambda_sg_id" {
+  value = module.network.api_lambda_sg_id
+}
