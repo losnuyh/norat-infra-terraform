@@ -30,14 +30,6 @@ variable "bastion_sg_id" {
   type = string
 }
 
-variable "alb_sg_id" {
-  type = string
-}
-
-variable "app_instance_sg_id" {
-  type = string
-}
-
 variable "ec2_key_path" {
   type = string
 }
