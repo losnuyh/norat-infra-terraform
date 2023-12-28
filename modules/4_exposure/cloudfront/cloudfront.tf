@@ -19,8 +19,11 @@ resource "aws_cloudfront_distribution" "static" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate.norat_static_domain.arn
+    ssl_support_method = "sni-only"
   }
+
+  aliases = [aws_acm_certificate.norat_static_domain.domain_name]
 
   default_cache_behavior {
     allowed_methods        = ["HEAD", "GET"]

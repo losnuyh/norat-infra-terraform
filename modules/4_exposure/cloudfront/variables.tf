@@ -17,3 +17,7 @@ variable "static_bucket_id" {
 variable "static_bucket_arn" {
   type = string
 }
+
+variable "root_domain" {
+  type = string
+}
