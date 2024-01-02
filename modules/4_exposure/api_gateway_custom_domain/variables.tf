@@ -6,22 +6,6 @@ variable "env" {
   type = string
 }
 
-variable "static_bucket_domain_name" {
-  type = string
-}
-
-variable "static_bucket_id" {
-  type = string
-}
-
-variable "static_bucket_arn" {
-  type = string
-}
-
-variable "root_domain" {
-  type = string
-}
-
 variable "api_app_invoke_url" {
   type = string
 }
@@ -34,6 +18,10 @@ variable "api_app_apigateway_stage_name" {
   type = string
 }
 
-variable "api_lambda_function_arn" {
+variable "domain_zone_id" {
+  type = string
+}
+
+variable "root_domain" {
   type = string
 }
