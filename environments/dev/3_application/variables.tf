@@ -33,3 +33,12 @@ variable "application_instance_ami" {
 variable "bastion_sg_id" {
   type = string
 }
+
+variable "api_lambda_sg_id" {
+  type = string
+}
+
+variable "default_api_lambda_deploy" {
+  type = bool
+  default = false
+}
