@@ -9,3 +9,15 @@ output "static_bucket_id" {
 output "static_bucket_arn" {
   value = module.storage.static_bucket_arn
 }
+
+output "db_write_host" {
+  value = module.storage.db_write_host
+}
+
+output "db_read_host" {
+  value = module.storage.db_read_host
+}
+
+output "db_port" {
+  value = module.storage.db_port
+}
