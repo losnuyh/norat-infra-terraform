@@ -22,6 +22,7 @@ module "api_gateway_custom_domain" {
 module "github_deploy_role" {
   source = "./github_deploy_role"
   project = var.project
+  region = var.region
   env = var.env
   account_id = data.aws_caller_identity.current.account_id
   api_lambda_function_arn = var.api_lambda_function_arn

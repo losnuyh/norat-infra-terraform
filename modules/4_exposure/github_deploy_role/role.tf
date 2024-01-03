@@ -42,3 +42,25 @@ resource "aws_iam_role_policy_attachment" "lambda_deploy_policy_attach_to_github
   policy_arn = aws_iam_policy.lambda_deploy_policy.arn
   role       = aws_iam_role.github_role.name
 }
+
+resource "aws_iam_policy" "app_env_var_parameter_store_policy" {
+  name = "${var.project}_${var.env}_app_env_var_parameter_store_policy"
+  policy = jsonencode({
+    Version: "2012-10-17",
+    Statement = [
+      {
+        Action = [
+          "ssm:GetParameter",
+          "ssm:GetParameters",
+        ],
+        Effect = "Allow",
+        Resource = ["arn:aws:ssm:${var.region}:${var.account_id}:parameter/${var.project}/${var.env}/*"]
+      },
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "app_env_var_parameter_store_policy_attach_to_github_role" {
+  policy_arn = aws_iam_policy.app_env_var_parameter_store_policy.arn
+  role       = aws_iam_role.github_role.name
+}
