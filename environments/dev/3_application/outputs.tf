@@ -13,3 +13,7 @@ output "api_app_apigateway_stage_name" {
 output "api_lambda_function_arn" {
   value = module.application.api_lambda_function_arn
 }
+
+output "api_lambda_function_name" {
+  value = module.application.api_lambda_function_name
+}
