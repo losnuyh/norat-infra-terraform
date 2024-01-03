@@ -6,6 +6,9 @@ resource "aws_security_group" "aurora_mysql" {
     from_port = 3306
     to_port = 3306
     protocol = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # TEMP
+    security_groups = [
+      aws_security_group.bastion.id,
+      aws_security_group.api_lambda.id,
+    ]
   }
 }
