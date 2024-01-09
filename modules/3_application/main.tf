@@ -33,4 +33,5 @@ module "app_parameter" {
   cool_sms_api_secret_key = var.cool_sms_api_secret_key
   cool_sms_send_phone_number = var.cool_sms_send_phone_number
   jwt_signing_private_key = var.jwt_signing_private_key
+  neis_key = var.neis_key
 }

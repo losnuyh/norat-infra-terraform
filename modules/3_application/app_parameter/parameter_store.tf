@@ -73,3 +73,9 @@ resource "aws_ssm_parameter" "jwt_signing_private_key" {
   type = "SecureString"
   value = var.jwt_signing_private_key
 }
+
+resource "aws_ssm_parameter" "neis_key" {
+  name = "${local.prefix}/NEIS_KEY"
+  type = "SecureString"
+  value = var.neis_key
+}

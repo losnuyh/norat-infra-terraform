@@ -90,3 +90,7 @@ variable "cool_sms_send_phone_number" {
 variable "jwt_signing_private_key" {
   type = string
 }
+
+variable "neis_key" {
+  type = string
+}
