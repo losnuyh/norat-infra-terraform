@@ -57,3 +57,11 @@ variable "jwt_signing_private_key" {
 variable "neis_key" {
   type = string
 }
+
+variable "port_one_key" {
+  type = string
+}
+
+variable "port_one_secret" {
+  type = string
+}

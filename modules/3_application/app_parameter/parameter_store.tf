@@ -79,3 +79,15 @@ resource "aws_ssm_parameter" "neis_key" {
   type = "SecureString"
   value = var.neis_key
 }
+
+resource "aws_ssm_parameter" "port_one_key" {
+  name = "${local.prefix}/PORT_ONE_KEY"
+  type = "SecureString"
+  value = var.port_one_key
+}
+
+resource "aws_ssm_parameter" "port_one_secret" {
+  name = "${local.prefix}/PORT_ONE_SECRET"
+  type = "SecureString"
+  value = var.port_one_secret
+}

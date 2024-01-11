@@ -25,4 +25,6 @@ module "application" {
   cool_sms_send_phone_number = var.cool_sms_send_phone_number
   jwt_signing_private_key = var.jwt_signing_private_key
   neis_key = var.neis_key
+  port_one_key = var.port_one_key
+  port_one_secret = var.port_one_secret
 }
