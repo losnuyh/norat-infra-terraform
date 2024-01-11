@@ -91,3 +91,9 @@ resource "aws_ssm_parameter" "port_one_secret" {
   type = "SecureString"
   value = var.port_one_secret
 }
+
+resource "aws_ssm_parameter" "user_upload_bucket_name" {
+  name = "${local.prefix}/USER_UPLOAD_S3_BUCKET_NAME"
+  type = "String"
+  value = var.user_upload_bucket_name
+}

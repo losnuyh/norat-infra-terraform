@@ -37,4 +37,5 @@ module "app_parameter" {
   neis_key = var.neis_key
   port_one_key = var.port_one_key
   port_one_secret = var.port_one_secret
+  user_upload_bucket_name = var.user_upload_s3_bucket_name
 }

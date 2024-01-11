@@ -106,3 +106,7 @@ variable "port_one_secret" {
 variable "user_upload_s3_bucket_arn" {
   type = string
 }
+
+variable "user_upload_s3_bucket_name" {
+  type = string
+}
