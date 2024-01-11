@@ -10,6 +10,10 @@ output "static_bucket_arn" {
   value = module.s3.static_bucket_arn
 }
 
+output "user_upload_bucket_arn" {
+  value = module.s3.user_upload_bucket_arn
+}
+
 output "db_write_host" {
   value = module.aurora-mysql.db_write_host
 }
@@ -20,4 +24,8 @@ output "db_read_host" {
 
 output "db_port" {
   value = module.aurora-mysql.db_port
+}
+
+output "user_upload_s3_bucket_name" {
+  value = module.s3.user_upload_bucket_name
 }

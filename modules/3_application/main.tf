@@ -6,6 +6,7 @@ module "lambda" {
   api_lambda_sg_id = var.api_lambda_sg_id
   default_api_lambda_deploy = var.default_api_lambda_deploy
   api_lambda_source_dir = var.api_lambda_source_dir
+  user_upload_s3_arn = var.user_upload_s3_arn
 }
 
 module "api_gateway" {

@@ -21,3 +21,7 @@ variable "api_lambda_source_dir" {
 variable "default_api_lambda_deploy" {
   type = bool
 }
+
+variable "user_upload_s3_arn" {
+  type = string
+}

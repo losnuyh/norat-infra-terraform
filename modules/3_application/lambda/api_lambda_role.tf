@@ -16,3 +16,8 @@ resource "aws_iam_role_policy_attachment" "api_lambda_role_1" {
   policy_arn = aws_iam_policy.lambda_default.arn
   role       = aws_iam_role.api_lambda.name
 }
+
+resource "aws_iam_role_policy_attachment" "api_lambda_role_2" {
+  policy_arn = aws_iam_policy.user_upload_s3_pre_signed_url_policy.arn
+  role       = aws_iam_role.api_lambda.name
+}
