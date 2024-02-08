@@ -11,6 +11,8 @@ resource "aws_acm_certificate" "norat_api" {
 }
 
 resource "aws_route53_record" "norat_api" {
+  depends_on = [aws_acm_certificate.norat_api]
+
   for_each = {
     for dvo in aws_acm_certificate.norat_api.domain_validation_options : dvo.domain_name => {
       name   = dvo.resource_record_name
