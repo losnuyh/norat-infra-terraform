@@ -22,14 +22,6 @@ variable "private_subnet_ids" {
   type = list(string)
 }
 
-variable "instance_type" {
-  type = string
-}
-
-variable "application_instance_ami" {
-  type = string
-}
-
 variable "bastion_sg_id" {
   type = string
 }
