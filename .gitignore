@@ -1,4 +1,5 @@
 */bastion-key*
+*bastion-key*
 *ec2-key*
 */output.txt
 *output.txt
@@ -43,3 +44,4 @@ override.tf.json
 terraform.rc
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform
+environments/prod/1_network/file/bastion-key.pub
