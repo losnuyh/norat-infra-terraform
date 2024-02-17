@@ -54,7 +54,11 @@ resource "aws_iam_policy" "app_env_var_parameter_store_policy" {
           "ssm:GetParameters",
         ],
         Effect = "Allow",
-        Resource = ["arn:aws:ssm:${var.region}:${var.account_id}:parameter/${var.project}/${var.env}/*"]
+        Resource = [
+          "arn:aws:ssm:${var.region}:${var.account_id}:parameter/${var.project}/MAIN/${var.env}/*",
+          "arn:aws:ssm:${var.region}:${var.account_id}:parameter/${var.project}/COMMON/${var.env}/*",
+          "arn:aws:ssm:${var.region}:${var.account_id}:parameter/${var.project}/ADMIN/${var.env}/*",
+        ]
       },
     ]
   })
