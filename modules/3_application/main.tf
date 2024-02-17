@@ -7,6 +7,7 @@ module "lambda" {
   default_api_lambda_deploy = var.default_api_lambda_deploy
   api_lambda_source_dir = var.api_lambda_source_dir
   user_upload_s3_arn = var.user_upload_s3_arn
+  default_admin_api_lambda_deploy = var.default_admin_api_lambda_deploy
 }
 
 module "api_gateway" {
@@ -16,6 +17,8 @@ module "api_gateway" {
   env = var.env
   api_lambda_invoke_arn = module.lambda.api_lambda_invoke_arn
   api_lambda_function_name = module.lambda.api_lambda_function_name
+  admin_api_lambda_invoke_arn = module.lambda.admin_api_lambda_invoke_arn
+  admin_api_lambda_function_name = module.lambda.admin_api_lambda_function_name
 }
 
 module "app_parameter" {
@@ -38,4 +41,5 @@ module "app_parameter" {
   port_one_key = var.port_one_key
   port_one_secret = var.port_one_secret
   user_upload_bucket_name = var.user_upload_s3_bucket_name
+  admin_token = var.admin_token
 }

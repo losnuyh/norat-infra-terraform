@@ -22,6 +22,10 @@ variable "default_api_lambda_deploy" {
   type = bool
 }
 
+variable "default_admin_api_lambda_deploy" {
+  type = bool
+}
+
 variable "user_upload_s3_arn" {
   type = string
 }

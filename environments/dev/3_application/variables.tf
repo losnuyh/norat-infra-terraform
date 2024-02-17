@@ -102,3 +102,7 @@ variable "user_upload_s3_bucket_arn" {
 variable "user_upload_s3_bucket_name" {
   type = string
 }
+
+variable "admin_token" {
+  type = string
+}

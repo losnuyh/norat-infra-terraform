@@ -17,3 +17,23 @@ output "api_lambda_function_arn" {
 output "api_lambda_function_name" {
   value = module.application.api_lambda_function_name
 }
+
+output "admin_api_app_invoke_url" {
+  value = module.application.admin_api_app_invoke_url
+}
+
+output "admin_api_app_api_id" {
+  value = module.application.admin_api_app_api_id
+}
+
+output "admin_api_app_apigateway_stage_name" {
+  value = module.application.admin_stage_name
+}
+
+output "admin_api_lambda_function_arn" {
+  value = module.application.admin_api_lambda_function_arn
+}
+
+output "admin_api_lambda_function_name" {
+  value = module.application.admin_api_lambda_function_name
+}

@@ -103,3 +103,11 @@ resource "aws_ssm_parameter" "user_upload_bucket_name_for_common" {
   type = "String"
   value = var.user_upload_bucket_name
 }
+
+# admin
+
+resource "aws_ssm_parameter" "admin_token_for_admin" {
+  name = "${local.admin_prefix}/ADMIN_TOKEN"
+  type = "SecureString"
+  value = var.admin_token
+}

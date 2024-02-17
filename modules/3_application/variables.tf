@@ -39,6 +39,11 @@ variable "default_api_lambda_deploy" {
   default = false
 }
 
+variable "default_admin_api_lambda_deploy" {
+  type = bool
+  default = true
+}
+
 variable "write_db_user_name" {
   type = string
 }
@@ -104,5 +109,9 @@ variable "user_upload_s3_arn" {
 }
 
 variable "user_upload_s3_bucket_name" {
+  type = string
+}
+
+variable "admin_token" {
   type = string
 }

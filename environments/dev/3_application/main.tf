@@ -27,4 +27,5 @@ module "application" {
   port_one_secret = var.port_one_secret
   user_upload_s3_arn = var.user_upload_s3_bucket_arn
   user_upload_s3_bucket_name = var.user_upload_s3_bucket_name
+  admin_token = var.admin_token
 }

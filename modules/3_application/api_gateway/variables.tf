@@ -17,3 +17,12 @@ variable "api_lambda_invoke_arn" {
 variable "api_lambda_function_name" {
   type = string
 }
+
+variable "admin_api_lambda_invoke_arn" {
+  type = string
+}
+
+variable "admin_api_lambda_function_name" {
+  type = string
+}
+

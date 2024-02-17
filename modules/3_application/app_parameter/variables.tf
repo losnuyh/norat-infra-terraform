@@ -69,3 +69,7 @@ variable "port_one_secret" {
 variable "user_upload_bucket_name" {
   type = string
 }
+
+variable "admin_token" {
+  type = string
+}
