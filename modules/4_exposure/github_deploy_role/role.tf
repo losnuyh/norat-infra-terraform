@@ -32,6 +32,7 @@ resource "aws_iam_policy" "lambda_deploy_policy" {
         ],
         Resource = [
           var.api_lambda_function_arn,
+          var.admin_api_lambda_function_arn,
         ]
       }
     ]

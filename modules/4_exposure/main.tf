@@ -26,4 +26,5 @@ module "github_deploy_role" {
   env = var.env
   account_id = data.aws_caller_identity.current.account_id
   api_lambda_function_arn = var.api_lambda_function_arn
+  admin_api_lambda_function_arn = var.admin_api_lambda_function_arn
 }

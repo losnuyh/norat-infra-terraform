@@ -41,3 +41,7 @@ variable "api_app_apigateway_stage_name" {
 variable "api_lambda_function_arn" {
   type = string
 }
+
+variable "admin_api_lambda_function_arn" {
+  type = string
+}

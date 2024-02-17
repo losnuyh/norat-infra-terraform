@@ -17,3 +17,7 @@ variable "account_id" {
 variable "api_lambda_function_arn" {
   type = string
 }
+
+variable "admin_api_lambda_function_arn" {
+  type = string
+}

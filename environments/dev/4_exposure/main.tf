@@ -11,4 +11,5 @@ module "exposure" {
   api_app_api_id = var.api_app_api_id
   api_app_apigateway_stage_name = var.api_app_apigateway_stage_name
   api_lambda_function_arn = var.api_lambda_function_arn
+  admin_api_lambda_function_arn = var.admin_api_lambda_function_arn
 }
